@@ -287,8 +287,13 @@ export default function App() {
               {ranking.map((player) => (
                 <div key={player.id} className="rank-row">
                   <div className="rank-left">
-                    <div className="avatar">{player.emoji}</div>
-                    <div>
+                    <div className="avatar">
+ 			 <img
+   			 src={player.id === "p1" ? "/alvaro.jpg" : "/rita.jpg"}
+   			 alt={player.name}
+   			 className="avatar-img"
+  			/>
+			</div>
                       <div className={`player-name ${playerNameClass(player.name)}`}>
                         {player.name}
                       </div>
