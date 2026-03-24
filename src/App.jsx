@@ -289,7 +289,7 @@ export default function App() {
                   <div className="rank-left">
                     <div className="avatar">
                       <img
-                        src={player.id === "p1" ? "/alvaro.jpg" : "/rita.jpg"}
+                        src={player.id === "p1" ? "/alvaro.jpg" : "/rita.JPG"}
                         alt={player.name}
                         className="avatar-img"
                       />
