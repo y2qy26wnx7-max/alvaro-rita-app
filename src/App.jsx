@@ -233,6 +233,12 @@ export default function App() {
           <section className="card hero-card">
             <div>
               <div className="pill">♡ Modo pareja competitivo</div>
+
+              <div className="top-photos">
+                <img src="/juntos 1.JPG" alt="Juntos 1" className="top-photo" />
+                <img src="/juntos 2.JPG" alt="Juntos 2" className="top-photo" />
+              </div>
+
               <h1>Alvaro y Rita</h1>
               <p className="subtitle">que se aman</p>
               <div className="muted status-text">{saveStatus}</div>
@@ -287,13 +293,28 @@ export default function App() {
               {ranking.map((player) => (
                 <div key={player.id} className="rank-row">
                   <div className="rank-left">
-                    <div className="avatar">
+                    <div
+                      style={{
+                        width: "28px",
+                        height: "28px",
+                        borderRadius: "999px",
+                        overflow: "hidden",
+                        flexShrink: 0,
+                      }}
+                    >
                       <img
                         src={player.id === "p1" ? "/alvaro.jpg" : "/rita.JPG"}
                         alt={player.name}
-                        className="avatar-img"
+                        style={{
+                          width: "28px",
+                          height: "28px",
+                          objectFit: "cover",
+                          display: "block",
+                          borderRadius: "999px",
+                        }}
                       />
                     </div>
+
                     <div>
                       <div className={`player-name ${playerNameClass(player.name)}`}>
                         {player.name}
@@ -303,6 +324,7 @@ export default function App() {
                       </div>
                     </div>
                   </div>
+
                   <div className={`points-badge ${pointsClass(player.score)}`}>
                     {player.score > 0 ? "+" : ""}
                     {player.score} pts
@@ -464,8 +486,16 @@ export default function App() {
                         <img
                           src={player.id === "p1" ? "/alvaro.jpg" : "/rita.JPG"}
                           alt={player.name}
-                          className="mini-avatar"
-                        />{" "}
+                          style={{
+                            width: "16px",
+                            height: "16px",
+                            borderRadius: "999px",
+                            objectFit: "cover",
+                            verticalAlign: "middle",
+                            marginRight: "6px",
+                            display: "inline-block",
+                          }}
+                        />
                         <span className={playerNameClass(player.name)}>{player.name}</span>
                       </div>
                       <span className={`points-badge ${pointsClass(player.score)}`}>
