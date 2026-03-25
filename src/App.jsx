@@ -462,7 +462,7 @@ export default function App() {
                     <div className="summary-top">
                       <div className="player-name">
                         <img
-                          src={player.id === "p1" ? "/alvaro.jpg" : "/rita.jpg"}
+                          src={player.id === "p1" ? "/alvaro.jpg" : "/rita.JPG"}
                           alt={player.name}
                           className="mini-avatar"
                         />{" "}
