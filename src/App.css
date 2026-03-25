@@ -14,6 +14,35 @@ body {
   margin: auto;
 }
 
+/* 🔥 EVITA IMÁGENES GIGANTES */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* 🖼️ FOTOS DEL HEADER */
+.top-photos {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  margin: 14px 0 20px;
+}
+
+.top-photo {
+  width: 140px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 14px;
+  opacity: 0.9;
+  transition: 0.2s;
+}
+
+.top-photo:hover {
+  transform: scale(1.05);
+  opacity: 1;
+}
+
 h1 {
   text-align: center;
   font-size: 40px;
@@ -107,6 +136,7 @@ select {
   text-align: center;
 }
 
+/* 🏆 RANKING */
 .rank-row {
   display: flex;
   align-items: center;
@@ -120,6 +150,7 @@ select {
   gap: 12px;
 }
 
+/* 👤 AVATARES */
 .avatar {
   width: 42px;
   height: 42px;
@@ -133,9 +164,9 @@ select {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  display: block;
 }
 
+/* 👤 MINI AVATAR */
 .mini-avatar {
   width: 20px;
   height: 20px;
