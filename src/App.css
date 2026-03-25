@@ -174,4 +174,24 @@ select {
   object-fit: cover;
   vertical-align: middle;
   margin-right: 6px;
+}.top-photos {
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  gap: 14px !important;
+  margin: 14px 0 18px !important;
+  flex-wrap: nowrap !important;
+}
+
+.top-photo {
+  width: 140px !important;
+  height: 100px !important;
+  max-width: 140px !important;
+  max-height: 100px !important;
+  min-width: 140px !important;
+  min-height: 100px !important;
+  object-fit: cover !important;
+  border-radius: 14px !important;
+  display: block !important;
+  flex: 0 0 140px !important;
 }
